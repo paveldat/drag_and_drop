@@ -43,17 +43,11 @@ while True:
                 rect.update(cursor)
     
     # Draw
-    imgNew = np.zeros_like(img, np.uint8)
     for rect in rectList:
         cx, cy = rect.posCenter
         w, h = rect.size
-        cv2.rectangle(imgNew, (cx - w//2, cy - h//2), (cx + w//2, cy + h//2), colorR, cv2.FILLED)
-        cvzone.cornerRect(imgNew, (cx - w//2, cy - h//2, w, h), 20, rt=0)
+        cv2.rectangle(img, (cx - w//2, cy - h//2), (cx + w//2, cy + h//2), colorR, cv2.FILLED)
+        cvzone.cornerRect(img, (cx - w//2, cy - h//2, w, h), 20, rt=0)
 
-    out = img.copy()
-    alpha = 0.1
-    mask = imgNew.astype(bool)
-    out[mask] = cv2.addWeighted(img, alpha, imgNew, 1-alpha, 0)[mask]
-
-    cv2.imshow("Image", out)
+    cv2.imshow("Image", img)
     cv2.waitKey(1)
