@@ -10,6 +10,8 @@ In this project I am going to learn how to create a virtual drag and drop system
 `https://github.com/paveldat/drag_and_drop.git`
 2. Install all the requirements
 `run libraries.bat`
+Or
+`pip install -r requirements.txt`
 3. Run the program
 `python main.py`
 
