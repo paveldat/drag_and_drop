@@ -1,10 +1,6 @@
 # Drag and Drop
 In this project I am going to learn how to create a virtual drag and drop system using opencv and python
 
-## Features
-* Can track your hand in real-time
-* Can change your computer's volume based on your hand activity
-
 ## How to install
 1. Clone this repository on your computer
 `https://github.com/paveldat/drag_and_drop.git`
