@@ -19,6 +19,10 @@ Increment this number until you see your webcam.
 ## Hand Landmarks
 <img src="https://github.com/paveldat/gesture_volume_control_v2/blob/main/img/HandLandmarks.png">
 
+## Click
+In order to simulate a click, you need to connect the index and middle fingers on your hand. An example of a valid click is shown in the image below.
+
+<img src="https://github.com/paveldat/drag_and_drop/blob/main/img/click.png">
 
 ## Result
 ![Alt Text](https://github.com/paveldat/drag_and_drop/blob/main/img/result.gif)
